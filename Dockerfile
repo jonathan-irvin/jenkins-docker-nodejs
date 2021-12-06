@@ -1,5 +1,7 @@
 FROM bibinwilson/jenkins-slave:latest
 
+LABEL maintainer="Jonathan Irvin <jonathanirvin@airstrip.com>"
+
 ARG NODE_VERSION=12.13.0
 ENV NODE_VOLTA="node@${NODE_VERSION}"
 
