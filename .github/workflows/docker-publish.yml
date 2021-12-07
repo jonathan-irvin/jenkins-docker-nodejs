@@ -3,6 +3,10 @@ name: Docker Image CI (Publish)
 on:  
   push:
     branches: [ main ]
+  schedule:
+    # Nightly
+    - cron:  '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
 
