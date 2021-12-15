@@ -12,6 +12,7 @@ jobs:
 
   build:
     env:
+      REGISTRY: ghcr.io
       IMAGE_NAME: jenkins-docker-nodejs
 
     strategy:
@@ -25,6 +26,12 @@ jobs:
 
     - name: Build the Docker image
       run: docker build . --file Dockerfile --build-arg NODE_VERSION=${{ matrix.node-version }} --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}"
+
+    - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
       
     - name: Log in to registry       
       run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
