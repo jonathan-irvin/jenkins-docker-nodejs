@@ -6,17 +6,11 @@ Runs Jenkins agent in a docker container with different versions of NodeJS to ea
 Job runs nightly and on pushes to main to refresh the packages. 
 
 Node LTS Docker Container:
-- [jenkins-docker-node-12](https://github.com/jonathan-irvin/jenkins-docker-nodejs/pkgs/container/jenkins-docker-node-12)
-- [jenkins-docker-node-14](https://github.com/jonathan-irvin/jenkins-docker-nodejs/pkgs/container/jenkins-docker-node-14)
-- [jenkins-docker-node-16](https://github.com/jonathan-irvin/jenkins-docker-nodejs/pkgs/container/jenkins-docker-node-16)
+- [jenkins-docker-nodejs:12](https://github.com/jonathan-irvin/jenkins-docker-nodejs/pkgs/container/jenkins-docker-nodejs)
+- [jenkins-docker-nodejs:14](https://github.com/jonathan-irvin/jenkins-docker-nodejs/pkgs/container/jenkins-docker-nodejs)
+- [jenkins-docker-nodejs:16](https://github.com/jonathan-irvin/jenkins-docker-nodejs/pkgs/container/jenkins-docker-nodejs)
 
 Latest Node Version:
-- [jenkins-docker-node-latest](https://github.com/jonathan-irvin/jenkins-docker-nodejs/pkgs/container/jenkins-docker-node-latest)
-
-Additionally, there are specific versions of node which have images created:
-- [jenkins-docker-node-12.13.0](https://github.com/jonathan-irvin/jenkins-docker-nodejs/pkgs/container/jenkins-docker-node-12.13.0)
-- [jenkins-docker-node-12.22.7](https://github.com/jonathan-irvin/jenkins-docker-nodejs/pkgs/container/jenkins-docker-node-12.22.7)
-- [jenkins-docker-node-14.18.2](https://github.com/jonathan-irvin/jenkins-docker-nodejs/pkgs/container/jenkins-docker-node-14.18.2)
-- [jenkins-docker-node-16.13.1](https://github.com/jonathan-irvin/jenkins-docker-nodejs/pkgs/container/jenkins-docker-node-16.13.1)
+- [jenkins-docker-nodejs:latest](https://github.com/jonathan-irvin/jenkins-docker-nodejs/pkgs/container/jenkins-docker-nodejs)
 
 Inspired by and based off of https://devopscube.com/docker-containers-as-build-slaves-jenkins/
